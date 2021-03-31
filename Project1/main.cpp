@@ -26,7 +26,7 @@ int main() {
 
 	// affichage résultat soustraction
 	//w = v1.soustvect(v2);
-	w = v1 - v2;
+	w = v1 - v2; // grâce aux surcharge, possibilité de calculer directement les valeur sans passer par une fonction
 	cout << "w = "; w.affiche(); cout << "\n";
 
 	

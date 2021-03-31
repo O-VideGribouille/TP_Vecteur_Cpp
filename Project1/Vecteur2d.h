@@ -53,6 +53,7 @@ public :
 
 
 //Surcharge opérateur 
+// 	   permet de calculer directement dans le main;
 	// +
 	CVect2D operator + (CVect2D& v)const;
 
