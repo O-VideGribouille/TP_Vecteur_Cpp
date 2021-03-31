@@ -18,7 +18,7 @@ public :
 	CVect2D(float c1 = 0.2, float c2 = 5.0);
 
 //Constructeur copie
-	CVect2D(CVect2D& p);
+	CVect2D(CVect2D& v);
 
 //Destructeur
 	~CVect2D();
@@ -33,10 +33,10 @@ public :
 
 //Opérations usuelles 
 	//addition vectorielle
-	CVect2D additvect(CVect2D&);
+	//CVect2D additvect(CVect2D&);
 
 	//sousttraction vectorielle
-	CVect2D soustvect(CVect2D&);
+	//CVect2D soustvect(CVect2D&);
 
 	// produit scalaire de deux vecteurs
 	float prodscal(CVect2D&); 
@@ -49,4 +49,18 @@ public :
 
 	//Méthode affiche - visualiser la valeur des vecteurs
 	void affiche();
+
+
+
+//Surcharge opérateur 
+	// +
+	CVect2D operator + (CVect2D& v)const;
+
+	// -
+
+	CVect2D operator - (CVect2D& v)const;
+
+	// *
+
+	CVect2D operator * (CVect2D& v)const;
 };

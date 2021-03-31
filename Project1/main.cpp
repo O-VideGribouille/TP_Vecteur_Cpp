@@ -19,19 +19,27 @@ int main() {
 	cout << "w : "; w.affiche(); cout << "\n";
 	
 	// affichage résultat addition 
-	w = v1.additvect(v2);
+	//w = v1.additvect(v2);
+	  w = v1 + v2;
 	cout << "w = "; w.affiche(); cout << "\n";
-	
+
+
 	// affichage résultat soustraction
-	w = v1.soustvect(v2);
+	//w = v1.soustvect(v2);
+	w = v1 - v2;
 	cout << "w = "; w.affiche(); cout << "\n";
+
 	
 	// affichage résultat produit scalaire
-	cout << "V1*V2 = " << v1.prodscal (v2) << "\n";
+	//cout << "V1*V2 = " << v1.prodscal (v2) << "\n";
+	w = v1 * v2;
+	cout << "V1*V2 = "; w.affiche(); cout << "\n";
 
 	//affichage résultat méthode amie
 	float res = coincide2d(v1, v2);
-	cout << "\nLe resultat retourne la valeur :   " << res;
+	cout << "\nLe resultat retourne la valeur :   " << res << "\n\n";
+
+	
 
 
 	
