@@ -30,7 +30,7 @@ float CVect2D::getY()
 {
 	return f_y;
 }
-
+//addition vectorielle
 CVect2D CVect2D::additvect(CVect2D&v)
 {
 	CVect2D rslt;
@@ -39,7 +39,7 @@ CVect2D CVect2D::additvect(CVect2D&v)
 
 	return rslt;
 }
-
+//sousttraction vectorielle
 CVect2D CVect2D::soustvect(CVect2D&v)
 {
 	CVect2D rslt;
@@ -49,8 +49,22 @@ CVect2D CVect2D::soustvect(CVect2D&v)
 	return rslt;
 }
 
+// produit scalaire de deux vecteurs
 float CVect2D::prodscal(CVect2D&v)
 {
 	return  (v.f_x * f_x + v.f_y + f_y );
 }
 
+//méthode amie indé teste 2 vecteurs sont identique
+float coincide2d(const CVect2D& v1, const CVect2D& v2)
+{
+	if ((v1.f_x == v2.f_x) && (v1.f_y == v2.f_y))
+		return 1;
+	else return 0;
+}
+
+
+void CVect2D::affiche()
+{
+	cout << "< " << f_x << ", " << f_y << " > ";
+}

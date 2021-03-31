@@ -39,13 +39,14 @@ public :
 	CVect2D soustvect(CVect2D&);
 
 	// produit scalaire de deux vecteurs
-	float prodscal(CVect2D&);
+	float prodscal(CVect2D&); 
 
-	// produit vectoriel de deux vecteurs
-
-
-	//Méthode indé coincide2D
+	// produit vectoriel de deux vecteurs - Nope
 
 
-	//Méthode affiche - visualiser les résutat
+	//Méthode amie indé coincide2D
+	friend float coincide2d(const CVect2D&, const CVect2D&);
+
+	//Méthode affiche - visualiser la valeur des vecteurs
+	void affiche();
 };
