@@ -59,6 +59,9 @@ int main() {
 	float res = coincide3d(v3, v4);
 	cout << "\nLe resultat retourne la valeur :   " << res << "\n\n";
 
+	// affichage égaliter
+	
+
 	
 
 

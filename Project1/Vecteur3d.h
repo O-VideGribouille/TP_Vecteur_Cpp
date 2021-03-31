@@ -44,4 +44,8 @@ public :
 
 	CVect3D operator * (const CVect3D& v)const;
 
+	// =
+
+	CVect3D operator = (const CVect3D& v)const;
+
 };
