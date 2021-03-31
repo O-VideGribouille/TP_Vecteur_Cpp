@@ -4,6 +4,11 @@
 
 using namespace std;
 
+CVect3D::CVect3D(float c3)
+{
+	this->f_z = c3;
+}
+
 //Constructeurs avec valeurs par défauts
 CVect3D::CVect3D(float c1, float c2, float c3):CVect2D(f_x,f_y)
 {
@@ -41,25 +46,31 @@ void CVect3D::affiche3d()
 	cout << "< " << f_x << ", " << f_y << ", " << f_z << " > ";
 }
 
-CVect3D CVect3D::operator+(CVect3D& v) const
+CVect3D CVect3D::operator+(const CVect3D& v) const
 {
 	CVect3D v_tmp;
+	v_tmp.f_x = this->f_x + v.f_x;
+	v_tmp.f_y = this->f_y + v.f_y;
 	v_tmp.f_z = this->f_z + v.f_z;
 
 	return v_tmp;
 }
 
-CVect3D CVect3D::operator-(CVect3D& v) const
+CVect3D CVect3D::operator-(const CVect3D& v) const
 {
 	CVect3D v_tmp;
+	v_tmp.f_x = this->f_x - v.f_x;
+	v_tmp.f_y = this->f_y - v.f_y;
 	v_tmp.f_z = this->f_z - v.f_z;
 
 	return v_tmp;
 }
 
-CVect3D CVect3D::operator*(CVect3D& v) const
+CVect3D CVect3D::operator*(const CVect3D& v) const
 {
 	CVect3D v_tmp;
+	v_tmp.f_x = this->f_x * v.f_x;
+	v_tmp.f_y = this->f_y * v.f_y;
 	v_tmp.f_z = this->f_z * v.f_z;
 
 	return v_tmp;

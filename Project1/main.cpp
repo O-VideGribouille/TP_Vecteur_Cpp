@@ -10,7 +10,7 @@ int main() {
 	//cout << "Hello";
 
 	//initialisation des valeurs
-	CVect2D v1(5, 10), v2(3, 10), w; //coincide2d retourne 0; 
+	//CVect2D v1(5, 10), v2(3, 10), w; //coincide2d retourne 0; 
 	//CVect2D v1(5, 10), v2(5, 10), w; // coincide2D retourne 1;
 
 	CVect3D v3(5.3, 10, 0.5), v4(3, 10.2, 6), w2; //coincide2d retourne 0; 
@@ -36,15 +36,15 @@ int main() {
 	  //w = v1 + v2;
 	  w2 = v3 + v4;
 	//cout << "w = "; w.affiche(); cout << "\n";
-	cout << "w2 = "; w2.affiche3d(); cout << "\n";
+	cout << "La somme est  "; w2.affiche3d(); cout << "\n";
 
 
 	// affichage résultat soustraction
 	//w = v1.soustvect(v2);
 	//w = v1 - v2;
-	w = v3 - v4;
+	w2 = v3 - v4;
 	//cout << "w = "; w.affiche(); cout << "\n";
-	cout << "w2 = "; w2.affiche3d(); cout << "\n";
+	cout << "la difference est "; w2.affiche3d(); cout << "\n";
 
 	
 	// affichage résultat produit scalaire

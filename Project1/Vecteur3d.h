@@ -11,7 +11,8 @@ private :
 
 public :
 	//Constructeur valeurs par défauts
-	CVect3D(float c1 = 0.2, float c2 = 5.0, float c3 = 3.0);
+	CVect3D(float c3 = 3.0);
+	CVect3D(float f_x, float f_y, float f_z);
 
 
 	//Constructeur copie
@@ -33,14 +34,14 @@ public :
 
 	//Surcharge opérateur 
 		// +
-	CVect3D operator + (CVect3D& v)const;
+	CVect3D operator + (const CVect3D& v)const;
 
 	// -
 
-	CVect3D operator - (CVect3D& v)const;
+	CVect3D operator - (const CVect3D& v)const;
 
 	// *
 
-	CVect3D operator * (CVect3D& v)const;
+	CVect3D operator * (const CVect3D& v)const;
 
 };
