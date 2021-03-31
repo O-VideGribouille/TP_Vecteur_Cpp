@@ -1,4 +1,8 @@
 #include "Vecteur2d.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
 
 //Constructeurs avec valeurs par défauts
 CVect2D::CVect2D(float c1, float c2)
@@ -21,12 +25,12 @@ CVect2D::CVect2D(CVect2D& v)
 }
 
 //Accesseur
-float CVect2D::getX()
+float CVect2D::getX()const
 {
 	return f_x;
 }
 
-float CVect2D::getY()
+float CVect2D::getY()const
 {
 	return f_y;
 }

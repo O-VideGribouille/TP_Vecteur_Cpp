@@ -6,7 +6,7 @@ using namespace std;
 
 
 class CVect2D { //création d'une classe
-private: //données membres privées
+protected: //données membres privées
 	
 	float f_x;
 	float f_y;
@@ -24,8 +24,8 @@ public :
 	~CVect2D();
 
 //Accesseur
-	float getX();
-	float getY();
+	float getX()const;
+	float getY()const;
 	
 	
 	
